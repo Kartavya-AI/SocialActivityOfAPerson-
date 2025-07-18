@@ -1,0 +1,10 @@
+.env
+__pycache__/
+.DS_Store
+analysis_task.md
+cul
+cultural_fit.md 
+life_story.md 
+professional_background.md 
+reputation_check.md 
+research_task.md

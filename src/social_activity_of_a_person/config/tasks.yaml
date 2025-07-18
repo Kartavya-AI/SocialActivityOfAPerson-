@@ -1,0 +1,41 @@
+research_task:
+  description: >
+    Collect comprehensive public data on {person}, who works at {company} and lives in {location}.
+  expected_output: >
+    A detailed list of 10+ facts about the person’s digital life, including platforms, content, and tone.
+  agent: research_agent
+
+professional_background_task:
+  description: >
+    Review {person}'s professional background from platforms like LinkedIn, GitHub, blogs, etc.
+  expected_output: >
+    Bullet points on job history, roles, skills, achievements, and endorsements.
+  agent: professional_analyst
+
+reputation_check_task:
+  description: >
+    Investigate any public controversies, complaints, questionable behavior or risks in {person}'s digital presence.
+  expected_output: >
+    Summary of reputation risks (or lack thereof), with sources.
+  agent: reputation_checker
+
+analysis_task:
+  description: >
+    Based on collected research, analyze {person}'s lifestyle, interests, habits, and personality.
+  expected_output: >
+    Social/behavioral insights in bullet form.
+  agent: profile_analyzer
+
+culture_fit_task:
+  description: >
+    Determine if {person} would be a good cultural fit in a professional team setting.
+  expected_output: >
+    Judgment with reasoning: how they present themselves, tone, engagement, and alignment with team values.
+  agent: cultural_fit_evaluator
+
+story_task:
+  description: >
+    Write a compelling life story of {person} based on all gathered data.
+  expected_output: >
+    A detailed 500–800 word report in markdown summarizing their personal, professional, and social identity.
+  agent: narrative_writer

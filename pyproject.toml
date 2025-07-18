@@ -1,0 +1,23 @@
+[project]
+name = "social_activity_of_a_person"
+version = "0.1.0"
+description = "Social-activity-of-a-person using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.121.1,<1.0.0"
+]
+
+[project.scripts]
+social_activity_of_a_person = "social_activity_of_a_person.main:run"
+run_crew = "social_activity_of_a_person.main:run"
+train = "social_activity_of_a_person.main:train"
+replay = "social_activity_of_a_person.main:replay"
+test = "social_activity_of_a_person.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
