@@ -257,6 +257,7 @@ with col1:
         if gemini_key:
             st.session_state["GEMINI_API_KEY"] = gemini_key
             os.environ["GEMINI_API_KEY"] = gemini_key
+            os.environ["MODEL"] = "gemini/gemini-2.5-flash-preview-05-20"
             updated = True
         
         if serper_key:
