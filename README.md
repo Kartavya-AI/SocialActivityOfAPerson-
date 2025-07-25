@@ -364,3 +364,10 @@ For support, questions, or feature requests:
 [⭐ Star this project](https://github.com/yourusername/candidate-profile-analyzer) | [🐛 Report Bug](https://github.com/yourusername/candidate-profile-analyzer/issues) | [🚀 Request Feature](https://github.com/yourusername/candidate-profile-analyzer/issues)
 
 </div>
+
+### GCP
+
+```bash
+TOKEN=$(gcloud auth print-identity-token)
+curl -H "Authorization: Bearer $TOKEN"      -H "Content-Type: application/json"      -d '{"person": "Om Anand", "company": "IIT Bhilai", "location": "Bihar"}'      https://social-activity-api-977121587860.asia-south1.run.app/analyze-social-activity
+```
